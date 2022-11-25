@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 export default function FileHandler() {
   const { data: session } = useSession();
@@ -66,12 +67,12 @@ export default function FileHandler() {
       <div className="absolute m-12 p-2 left-0">
         <ul className="flex">
           <li className="mr-5">
-            <a
+            <Link
               className="inline-block py-3 px-6 ext-[#D1C9BC] font-dm"
               href="/dash"
             >
               ../
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -81,10 +82,10 @@ export default function FileHandler() {
             <div className="flex flex-col h-screen items-center justify-center lg:w-3/4">
               <div className="px-4 md:px-16 py-12 m-16 space-y-3">
                 <h1 className="text-4xl font-medium tracking-tight font-dm text-white-300">
-                  Let's get started!
+                  Let&apos;s get started!
                 </h1>
                 <h2 className="text-xl tracking-tight text-neutral-700 font-dm">
-                  Grab your audio file, it'll only take a few minutes
+                  Grab your audio file, it&apos;ll only take a few minutes
                 </h2>
                 <br />
                 <br />

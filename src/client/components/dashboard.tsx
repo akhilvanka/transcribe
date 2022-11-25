@@ -1,6 +1,7 @@
 import axios from "axios";
 import useSWR from "swr";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 export default function Dashboard() {
   const { data: session } = useSession();
@@ -27,7 +28,7 @@ export default function Dashboard() {
   return (
     <div className="space-x-12">
       {data.map((file) => (
-        <a href={"/" + file} className="text-2xl tracking-tight text-white-900 font-dm">{file}</a>
+        <Link key={file} href={"/" + file} className="text-2xl tracking-tight text-white-900 font-dm">{file}</Link>
           ))} 
     </div>
   );

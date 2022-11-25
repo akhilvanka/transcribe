@@ -26,7 +26,7 @@ export default function PostPage() {
 
         <main className="prose max-w-none prose-blue prose-img:rounded-md prose-img:w-full dark:prose-invert font-dm">
 		<h1 className="text-4xl font-medium tracking-tight font-dm text-white-300">
-                Sorry, that file doesn't exist!
+                Sorry, that file doesn&apos;t exist!
         </h1>
         </main>
       </div>
