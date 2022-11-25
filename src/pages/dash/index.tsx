@@ -22,11 +22,12 @@ const Home: NextPage = () => {
         <div className="absolute m-2 p-2 right-0">
           <ul className="flex">
             <li className="mr-5">
-                <Link
+                <Link href="/dash/new">
+                <a
                   className="inline-block rounded py-3 px-6 text-[#D1C9BC]"
-                  href="/dash/new"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className='bg-[#D1C9BC]' viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                  </a>
                   </Link>
             </li>
             <li className="mr-5">

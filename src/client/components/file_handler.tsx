@@ -67,11 +67,12 @@ export default function FileHandler() {
       <div className="absolute m-12 p-2 left-0">
         <ul className="flex">
           <li className="mr-5">
-            <Link
+            <Link href='/dash'>
+            <a
               className="inline-block py-3 px-6 ext-[#D1C9BC] font-dm"
-              href="/dash"
             >
               ../
+            </a>
             </Link>
           </li>
         </ul>

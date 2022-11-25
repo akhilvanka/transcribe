@@ -28,8 +28,12 @@ export default function Dashboard() {
   return (
     <div className="space-x-12">
       {data.map((file) => (
-        <Link key={file} href={"/" + file} className="text-2xl tracking-tight text-white-900 font-dm">{file}</Link>
-          ))} 
+        <>
+          <Link href={`/${file}`}>
+            <a key={file} href={"/" + file} className="text-xl tracking-tight text-white-900 font-dm">{file}</a>
+          </Link>
+        </>
+        ))} 
     </div>
   );
 }
