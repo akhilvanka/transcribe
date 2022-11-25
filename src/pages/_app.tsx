@@ -31,7 +31,7 @@ export default function App({ Component, pageProps: {session, ...pageProps}, rou
         >
           <div className="max-w-max max-h-max overflow-hidden">
             <Head>
-              <title>blog</title>
+              <title>Transcribe</title>
               <meta
                 name="viewport"
                 content="initial-scale=1.0, width=device-width"
